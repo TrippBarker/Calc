@@ -140,3 +140,8 @@ button:active{
     'buttonArray';
 }
 
+@media only screen and (max-width: 550px){
+  #calcBox{
+    width:90%;
+  }
+}

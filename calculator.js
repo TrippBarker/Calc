@@ -12,7 +12,7 @@ var secNum = 0;
 function buttPressed(e) {
   console.log(e.key);
   if ("1234567890./*-+=Enter".includes(e.key)){
-    var buttVal = e.key;
+    var buttVal = e.key.toString();
   } else {
     var buttVal = this.textContent;
   }
