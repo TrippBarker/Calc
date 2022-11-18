@@ -28,7 +28,9 @@ button {
   margin: auto auto 25px auto;
   padding: 15px;
   width: 90%;
+  max-width: 90%;
   border-radius: 5px;
+  resize: none;
 }
 
 #b7{
@@ -103,17 +105,21 @@ button {
   color: #9c9c9c;
 }
 
+#bDEC{
+  grid-area: bDEC;
+}
+
 #buttonArray{
   border-top: solid;
   color: #2f2b36;
   grid-area: buttonArray;
   display: grid;
   grid-template-areas:
-    'b7 b7 b8 b8 b9 b9 bEQ'
-    'b4 b4 b5 b5 b6 b6 bEQ'
+    'bRST bRST bDIV bDIV bMULT bMULT bMIN'
+    'b7 b7 b8 b8 b9 b9 bPLUS'
+    'b4 b4 b5 b5 b6 b6 bPLUS'
     'b1 b1 b2 b2 b3 b3 bEQ'
-    'b0 b0 bPLUS bPLUS bMIN bMIN bEQ'
-    'bRST bRST bMULT bMULT bDIV bDIV bEQ'
+    'b0 b0 b0 b0 bDEC bDEC bEQ'
     
   ;
 }
@@ -123,7 +129,7 @@ button:active{
 }
 
 #calcBox{
-  margin: auto;
+  margin: 25px auto auto auto;
   padding: 15px;
   display: grid;
   width: 500px;
